@@ -9,10 +9,19 @@
   <body>
     <h1>Jungle Gym Birthday Sheets Generator</h1>
     <div class="container">
-      <label for="datePicker">Select Dates:</label><br>
-      <input type="text" id="datePicker" placeholder="Select Dates" readonly/>
+      <div class="date-picker-container">
+        <label for="datePickerBig">Big Gym</label><br>
+        <input type="text" id="datePickerBig" placeholder="Select Dates" readonly/>
+      </div>
+      <div class="date-picker-container">
+        <label for="datePickerMini">Mini Gym</label><br>
+        <input type="text" id="datePickerMini" placeholder="Select Dates" readonly/>
+      </div>
+      <button id="generateBtn">Generate Sheets</button>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="renderer.js"></script>
+    
   </body>
 </html>
